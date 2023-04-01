@@ -7,8 +7,8 @@ module.exports = [
         chainId: 137,
         apiUrl: 'https://polygon.api.0x.org/',
         defaultRpc: '',
-        orderBookAddress : "0x8c025F3002B70511B4725d038B14dE4D5C7dA6cB",
-        arbAddress : "0x9399464E07dc501534545C09f4e5c428C162076c",
+        orderBookAddress : "0x42cc063a0730a99ff2fc25218c606eb4969ca2eb",
+        arbAddress : "0x867fdf225b666a2f16bb4c08404c597c909399a5",
         proxyAddress: '0xdef1c0ded9bec7f1a1670819833240f027b25eff',
         nativeToken: {
             symbol: 'MATIC',
@@ -56,10 +56,9 @@ module.exports = [
     }
 ];
 
-
-// Interprter : 0xaE870f76CaF6EE851953303D66fCA0d836D62e22
-// Store : 0xE45F955886fae8e64A4CdDd26F9e3DaF08A5ef85
-// Deployer : 0x56EB744dd1600C0D7119ECfAe9ff77B56C98953E
-// OrderBook : 0x8c025F3002B70511B4725d038B14dE4D5C7dA6cB
-// arb : 0x9399464E07dc501534545C09f4e5c428C162076c
-// 0x7bd60a6ad667f5cadbe3328f4a5c425fda8b9ab4
+// interprter:"0x8ecd48e70954dec0f45e4551f039a0d24038c536"
+// store:"0x13cdd62f032125fea331cf8b79eade8830cd5dab"
+// expression:"0x68181074a3929f51be86078e584e1ddc2cb3007c"
+// orderbook : 0x42cc063a0730a99ff2fc25218c606eb4969ca2eb 
+// clonefactory :  "0xf73d944e5d2c5a61d5821df1b275e0eaf016ff39" 
+// zeroexorderbookinstance : "0x867fdf225b666a2f16bb4c08404c597c909399a5"

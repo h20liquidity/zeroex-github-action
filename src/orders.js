@@ -3,22 +3,22 @@
  */
 module.exports = [
     {
-        owner: "0x86aeF9BeaC77fee6f2165e515FcE6505F40afC27",
+        owner: "0xA25f22b0Ab021A9cA1513C892e6FaacC50e92907",
         handleIO: true,
         evaluable: {
-            interpreter: "0xaE870f76CaF6EE851953303D66fCA0d836D62e22",
-            store: "0xE45F955886fae8e64A4CdDd26F9e3DaF08A5ef85",
-            expression: "0x88355b1c04e70cbf50a36a5a7d47bd29c97089e2"
+            interpreter: "0x8ECd48e70954Dec0f45e4551f039A0D24038c536",
+            store: "0x13cdD62F032125Fea331Cf8B79eADE8830CD5dab",
+            expression: "0xF77F4C334F3De948BaEdf814Af7f82365171e559"
         },
         validInputs: [{
             token: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
             decimals: 6,
-            vaultId: "0x05f3ff447c32b611352527c7afa8c3f7deee31428637a91cb3574f399b53b8fa"
+            vaultId: "0x84e4bec2eccb5e3f00d2db11f82a85c0329fa210edb34fbc266e8d2e9d10ee28"
         }],
         validOutputs: [{
             token: "0x84342e932797FC62814189f01F0Fb05F52519708",
             decimals: 18,
-            vaultId: "0x05f3ff447c32b611352527c7afa8c3f7deee31428637a91cb3574f399b53b8fa"
+            vaultId: "0x84e4bec2eccb5e3f00d2db11f82a85c0329fa210edb34fbc266e8d2e9d10ee28"
         }],
         // evaluableConfig: {
         //     deployer: "0x56EB744dd1600C0D7119ECfAe9ff77B56C98953E",
