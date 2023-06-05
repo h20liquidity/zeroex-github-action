@@ -12,7 +12,6 @@ let { abi: arbAbi } = require("../abis/ZeroExOrderBookFlashBorrower.json");
 
 /**
  * Estimates the profit for a single bundled orders struct
- *
  * @param {any} txQuote - The quote from 0x
  * @param {ethers.BigNumber} ratio - The ratio of the order
  * @param {ethers.BigNumber} quoteAmount - The quote amount
@@ -133,12 +132,12 @@ exports.getConfig = async(
 };
 
 /**
- * Main function that gets order details from subgraph, bundles the ones that have balance and tries clearing them
+ * Main function that tries clearing the orders
  *
  * @param {ethers.Signer} signer - The ethersjs signer constructed from provided private keys and rpc url provider
  * @param {object} config - The configuration object
+ * @param {object[]} orders - The orders as array of objects
  * @param {string} slippage - (optional) The slippage for clearing orders, default is 0.01 i.e. 1 percent
- * @param {boolean} prioritization - (optional) Prioritize better deals to get cleared first, default is true
  * @returns The report of details of cleared orders
  */
 exports.clear = async(signer, config, orders, slippage = "0.01") => {
