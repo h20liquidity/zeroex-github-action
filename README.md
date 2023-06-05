@@ -79,7 +79,11 @@ nix-shell
 
 For starting the app:
 ```bash
-node arb-bot -k 12ab... -r https://... --orderbook-address 0x1a2b... --arb-address 0xab12... [other optional arguments]
+node arb-bot [options]
+```
+run the following for saving the logs into a text file:
+```bash
+node arb-bot [options] | tee -a logs.txt
 ```
 The app requires these 4 arguments:
 - `-k` or `--key` A wallet private with eth balance to cover transaction costs, this wallet also receives the profits from submitting the transactions. A wallet private key is 64 length hex string. This can be set as environment variables too, see below.
