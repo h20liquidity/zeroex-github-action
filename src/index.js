@@ -184,7 +184,7 @@ exports.clear = async(signer, config, orders, slippage = "0.01") => {
     console.log("Arb Contract Address: " , arbAddress);
     console.log("OrderBook Contract Address: " , orderbookAddress, "\n");
 
-    if (!orders.length) console.log("No orders found, exiting...", "\n");
+    if (!orders.length) console.log(">>> No orders found, exiting...", "\n");
 
     const report = [];
     for (let i = 0; i < orders.length; i++) {
@@ -216,7 +216,7 @@ exports.clear = async(signer, config, orders, slippage = "0.01") => {
         console.log("Order's output vault balance:",  outputBalance.toString(), outputSymbol, "\n");
 
         // only try to clear if vault balance is not zero
-        if (outputBalance.isZero()) console.log("Order's output balance is empty, skipping...", "\n");
+        if (outputBalance.isZero()) console.log(">>> Order's output balance is empty, skipping...", "\n");
         else {
             // getting input vault balance for eval context
             const inputBalance = await orderbook.vaultBalance(
@@ -281,7 +281,7 @@ exports.clear = async(signer, config, orders, slippage = "0.01") => {
                             console.log(`Current market price of this token pair: ${txQuote.price}`);
                             console.log(`Current ratio of the order: ${ethers.utils.formatEther(ratio)}`);
                             if (ethers.utils.parseUnits(txQuote.price).lt(ratio)) console.log(
-                                "Order has higher ratio than current market price, skipping...", 
+                                ">>> Order has higher ratio than current market price, skipping...", 
                                 "\n"
                             );
                             else {
