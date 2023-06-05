@@ -249,9 +249,9 @@ exports.clear = async(signer, config, orders, slippage = "0.01") => {
                     ? fpOutputBalance
                     : maxOutput;
 
-                const quoteAmount = fpQuoteAmount
-                    .div("1" + "0".repeat(18 - orders[i].validOutputs[0].decimals))
-                    .toString();
+                const quoteAmount = fpQuoteAmount.div(
+                    "1" + "0".repeat(18 - orders[i].validOutputs[0].decimals)
+                );
 
                 console.log(`>>> Quote Amount: ${ethers.utils.formatEther(fpQuoteAmount)}`, outputSymbol, "\n");
 
