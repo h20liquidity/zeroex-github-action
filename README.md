@@ -13,7 +13,7 @@ Alternatively you can get the HTTPS or Websocket rpc url of your prefered provid
 2 - Add your orders into the `./orders.json` file, orders must be of valid Order struct, and `validInputs` and `validOutputs` should only have one item each. See `./example.orders.json` for an example of an order struct.
 You can also copy/paste the `./scripts/DeployStrategy/orderDetails.json` content output from [neighbourhoods](https://github.com/h20liquidity/neighbourhoods) repository to the `./orders.json` file.<br>
 3 - Add `Orderbook` and `0xOrderBookFlashBorrower` contract addresses to the `./.github/workflows/take-orders.yaml` file's last line after their respective flags, for more info about CLI flags and options read below.<br>
-4 - Enable the `Take Orders` workflow in the actions tab of your forked repository, this is needed because scheduled workflows will be disabled by default for forked repositories. Please be aware that the first run may take a bit more time, so be patient after enabling this workflow.<br>
+4 - Enable and uncomment the `Take Orders` workflow in the actions tab of your forked repository, this is needed because scheduled workflows will be disabled by default for forked repositories. Please be aware that the first run may take a bit more time, so be patient after enabling this workflow.<br>
 5 - Optionally you can edit the schedule in `./.github/workflows/take-orders.yaml` by modifying the cron syntax, by default it is set to run every 5 minutes.
 Please be aware that github scheduled workflows are not guaranteed to run at exact schedule because of github resource availability.<br>
 6 - Optionally you can specify more options with CLI flags in the workflow, for more info about the CLI flags read below.<br>
