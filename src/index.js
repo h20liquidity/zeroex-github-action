@@ -10,9 +10,6 @@ let { abi: interpreterAbi } = require("../abis/IInterpreterV1.json");
 let { abi: arbAbi } = require("../abis/ZeroExOrderBookFlashBorrower.json");
 
 
-const HEADERS = { headers: { "accept-encoding": "null" } };
-
-
 /**
  * Estimates the profit for a single bundled orders struct
  *
@@ -145,6 +142,7 @@ exports.getConfig = async(
  * @returns The report of details of cleared orders
  */
 exports.clear = async(signer, config, orders, slippage = "0.01") => {
+    const HEADERS = { headers: { "accept-encoding": "null" } };
     const api = config.apiUrl;
     const chainId = config.chainId;
     const arbAddress = config.arbAddress;
