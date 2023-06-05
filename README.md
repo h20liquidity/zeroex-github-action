@@ -88,8 +88,8 @@ node arb-bot [options] | tee -a logs.txt
 The app requires these 4 arguments:
 - `-k` or `--key` A wallet private with eth balance to cover transaction costs, this wallet also receives the profits from submitting the transactions. A wallet private key is 64 length hex string. This can be set as environment variables too, see below.
 - `-r` or `--rpc` An RPC URL, such as from Alchemy or Infura required for interacting with the working network. This can be set as environment variables too, see below.
-- `--orderbook-address` The Rain Orderbook contract address deployed on the working network.
-- `--arb-address` The Arb (ZeroExOrderBookFlashBorrower) contract address deployed on the working network.
+- `--orderbook-address` The Rain Orderbook contract address deployed on the working network (can also be set in `./config.json` file but not recommended).
+- `--arb-address` The Arb (ZeroExOrderBookFlashBorrower) contract address deployed on the working network (can also be set in `./config.json` file but not recommended).
 
 Other optional arguments are:
 - `-o` or `--orders` Path to the file that holds the orders to operate on. If provided will ignore `./orders.json` file.
