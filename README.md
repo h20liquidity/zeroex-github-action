@@ -132,7 +132,7 @@ All these values can alternatively be provided through cli with thier correspond
 If they are specified in `.env` file and passed in CLI, the CLI values will be used as primary.
 <br>
 
-Alternatively the operating `Orderbook`, `ZeroExOrderBookFlashBorrower` contracts addresses can be specified in `./config.json` in their respective fields of their specific networks so passing them as CLI can be ignored, however, if these both are provided the CLI will be used.<br>
+Alternatively (although not recommended) the operating `Orderbook`, `ZeroExOrderBookFlashBorrower` contracts addresses can be specified in `./config.json` in their respective fields of their specific networks so passing them as CLI can be ignored, however, if these both are provided the CLI will be used.<br>
 Example of a configuration:
 ```json
 [
@@ -143,19 +143,6 @@ Example of a configuration:
     "orderBookAddress": "<OrderBook contract address>",
     "arbAddress": "<ZeroExOrderBookFlashBorrower contract address>",
     "proxyAddress": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
-    "nativeToken": {
-      "symbol": "MATIC",
-      "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-      "decimals": 18
-    }
-  },
-  {
-    "network": "mumbai",
-    "chainId": "0x80001",
-    "apiUrl": "https://mumbai.api.0x.org/",
-    "orderBookAddress": "<OrderBook contract address>",
-    "arbAddress": "<ZeroExOrderBookFlashBorrower contract address>",
-    "proxyAddress": "0xf471d32cb40837bf24529fcf17418fc1a4807626",
     "nativeToken": {
       "symbol": "MATIC",
       "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
