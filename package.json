@@ -1,7 +1,7 @@
 {
   "name": "zeroex-take-order-bot",
   "description": "A bot running on NodeJs environment for targeting sepcific Rain orderbook orders to clear against 0x liquidity",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "license": "CAL-1.0",
   "author": "Rain Protocol",
   "main": "./src/index.js",
