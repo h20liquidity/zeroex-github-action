@@ -88,7 +88,7 @@ The app requires these 4 arguments:
 - `--arb-address` The Arb (ZeroExOrderBookFlashBorrower) contract address deployed on the working network.
 
 Other optional arguments are:
-- `-o` or `--orders` Path to the file that holds the orders to operate on. If provided will ignore './orders.json' file.
+- `-o` or `--orders` Path to the file that holds the orders to operate on. If provided will ignore `./orders.json` file.
 - `-a` or `--api-key` The 0x API key to use for quoting 0x with. Can also be set in env variables as `API_KEY`, see below.
 - `-s` or `--slippage` The slippage that can be set for the trades, the default is 0.001 which is 0.1%
 - `--interpreter-abi` The path to IInterpreter ABI json file used for instantiating ethers contract instances, should be absolute path, default is the `./src/abis/IInerpreterV1.json`.
