@@ -1,10 +1,10 @@
 {
   "name": "zeroex-take-order-bot",
   "description": "A bot running on NodeJs environment for targeting sepcific Rain orderbook orders to clear against 0x liquidity",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "license": "CAL-1.0",
   "author": "Rain Protocol",
-  "main": "./run.js",
+  "main": "./src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/h20liquidity/zeroex-take-order-bot.git"
@@ -13,14 +13,18 @@
     "url": "https://github.com/h20liquidity/zeroex-take-order-bot/issues"
   },
   "homepage": "https://github.com/h20liquidity/zeroex-take-order-bot#readme",
+  "bin": {
+    "arb-bot": "./arb-bot.js"
+},
   "scripts": {
-    "lint": "eslint ./run.js",
-    "lint-fix": "eslint ./run.js --fix",
+    "lint": "eslint ./src ./arb-bot.js",
+    "lint-fix": "eslint ./src ./arb-bot.js --fix",
     "test": "echo \"no test specified at the moment!\""
   },
   "dependencies": {
     "ajv": "^8.12.0",
     "axios": "^1.3.4",
+    "commander": "^10.0.1",
     "dotenv": "^16.0.3",
     "ethers": "=5.7.2"
   },
